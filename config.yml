@@ -1,0 +1,16 @@
+title: EA0309-0122
+description: Ea learning 01-22
+template:
+  repo: ea0309-0122-template
+  name: ea0309-0122
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
